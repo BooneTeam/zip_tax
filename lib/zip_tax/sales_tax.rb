@@ -10,7 +10,7 @@ module ZipTax
 
     def initialize(postalcode: nil,
                    state: nil,
-                   city: nil)
+                   city: nil, key: nil)
 
       fail ArgumentError, 'ZipTax.api_key must be set' if ZipTax.api_key.nil?
       fail ArgumentError, "postalcode is a required argument" if !postalcode

@@ -6,7 +6,7 @@ require 'zip_tax/version'
 Gem::Specification.new do |spec|
   spec.name          = "ziptax"
   spec.version       = ZipTax::VERSION
-  spec.authors       = ["Bryce McDonnell"]
+  spec.authors       = ["Bryce McDonnell", "Garrett Boone - after fork"]
   spec.email         = ["bryce@bridgetownint.com"]
   spec.summary       = %q{Consumes Zip-Tax.com API and returns tax rates}
   spec.description   = %q{Fetch calculated sales tax rate at the zip code area of specificity by consuming the Zip-Tax.com API}
@@ -18,9 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake", "~> 10.3"
-  spec.add_development_dependency "rspec", "~> 3.1"
-  spec.add_dependency 'rack', '~> 1.4'
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_dependency 'rack'
 
 end
